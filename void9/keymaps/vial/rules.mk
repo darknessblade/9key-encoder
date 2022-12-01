@@ -60,5 +60,6 @@ COMBO_ENABLE = yes
 # Disabling it frees 3300 bytes
 QMK_SETTINGS = yes
 
+VIAL_ENCODERS_ENABLE = yes
 #vial security
 VIAL_INSECURE = no
