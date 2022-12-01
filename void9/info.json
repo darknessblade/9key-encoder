@@ -1,23 +1,5 @@
 {
-    "manufacturer": "Encoder",
-    "keyboard_name": "9",
-    "maintainer": "darknessblade",
-    "bootloader": "caterina",
-    "diode_direction": "COL2ROW",
-    "features": {
-
-    },
-    "matrix_pins": {
-        "cols": ["GP18", "GP19", "GP20"],
-        "rows": ["GP21", "GP22", "GP23"]
-    },
-    "processor": "RP2040",
-    "url": 
-    "usb": {
-        "device_version": "1.0.0",
-        "pid": "0x3534",
-        "vid": "0xF055"
-    },
+    "keyboard_name": "knob9",
     "layouts": {
         "LAYOUT_ortho_3x3": {
             "layout": [
