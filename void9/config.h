@@ -17,12 +17,7 @@
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
 
-#define ENCODERS_PAD_A { GP0, GP1 }
-#define ENCODERS_PAD_B { GP2, GP3 }
-#define ENCODERS_PAD_C { GP4, GP5 }
-#define ENCODERS_PAD_D { GP6, GP7 }
-#define ENCODERS_PAD_E { GP8, GP9 }
-#define ENCODERS_PAD_F { GP10, GP11 }
-#define ENCODERS_PAD_G { GP12, GP13 }
-#define ENCODERS_PAD_H { GP14, GP15 }
-#define ENCODERS_PAD_I { GP16, GP17 }
+#define MATRIX_ROW_PINS { GP28, GP27, GP26}
+#define MATRIX_COL_PINS { GP25, GP24, GP23}
+#define ENCODERS_PAD_A {GP0, GP1, GP3, GP5, GP7, GP9, GP11, GP13,}
+#define ENCODERS_PAD_B { GP2, GP4, GP6, GP8, GP10, GP12, GP14, GP15}
