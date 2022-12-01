@@ -1,18 +1,18 @@
 {
-    "manufacturer": "VOID",
+    "manufacturer": "Encoder",
     "keyboard_name": "9",
-    "maintainer": "victorlucachi",
+    "maintainer": "darknessblade",
     "bootloader": "caterina",
     "diode_direction": "COL2ROW",
     "features": {
 
     },
     "matrix_pins": {
-        "cols": ["D1", "D0", "D4"],
-        "rows": ["F4", "F5", "F6"]
+        "cols": ["GP18", "GP19", "GP20"],
+        "rows": ["GP21", "GP22", "GP23"]
     },
-    "processor": "atmega32u4",
-    "url": "https://github.com/victorlucachi/void9",
+    "processor": "RP2040",
+    "url": 
     "usb": {
         "device_version": "1.0.0",
         "pid": "0x3534",
