@@ -4,28 +4,22 @@
 #include QMK_KEYBOARD_H
 
 // Defines names for use in layer keycodes and the keymap
-enum layer_names {
-    _BASE,
-    _FN1,
-    _FN2,
-    _FN3
-};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Base
  * ┌───┬───┬───┐
- * │ 7 │ 8 │ 9 │
+ * │   │   │   │
  * ├───┼───┼───┤
- * │ 4 │ 5 │ 6 │
+ * │   │   │   │
  * ├───┼───┼───┤
- * │ 1 │ 2 │ 3 │
+ * │   │   │   │
  * └───┴───┴───┘
  */
-[_BASE] = LAYOUT_ortho_3x3(
-    KC_7,       KC_8,       KC_9,
-    KC_4,       KC_5,       KC_6,
-    KC_1,       KC_2,       KC_3
+[0] = LAYOUT_ortho_3x3(
+    KC_TRNS,       KC_TRNS,       KC_TRNS,
+    KC_TRNS,       KC_TRNS,       KC_TRNS,
+    KC_TRNS,       KC_TRNS,       KC_TRNS
 ),
 
 /* FN1
@@ -37,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * │ 1 │ 2 │ 3 │
  * └───┴───┴───┘
  */
-[_FN1] = LAYOUT_ortho_3x3(
+[1] = LAYOUT_ortho_3x3(
     KC_TRNS,       KC_TRNS,       KC_TRNS,
     KC_TRNS,       KC_TRNS,       KC_TRNS,
     KC_TRNS,       KC_TRNS,       KC_TRNS
@@ -52,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * │   │   │   │
  * └───┴───┴───┘
  */
-[_FN2] = LAYOUT_ortho_3x3(
+[2] = LAYOUT_ortho_3x3(
     KC_TRNS,       KC_TRNS,       KC_TRNS,
     KC_TRNS,       KC_TRNS,       KC_TRNS,
     KC_TRNS,       KC_TRNS,       KC_TRNS
@@ -67,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * │   │   │   │
  * └───┴───┴───┘
  */
-[_FN3] = LAYOUT_ortho_3x3(
+[3] = LAYOUT_ortho_3x3(
     KC_TRNS,       KC_TRNS,       KC_TRNS,
     KC_TRNS,       KC_TRNS,       KC_TRNS,
     KC_TRNS,       KC_TRNS,       KC_TRNS
@@ -75,4 +69,52 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 /* Rotary Encoder Settings */
-
+#if defined(ENCODER_MAP_ENABLE)
+const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+    [0] =  {
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
+    },
+    
+    [1] =  {
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
+    },
+    
+        [2] =  {
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
+    },
+    
+        [3] =  {
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS),
+        ENCODER_CCW_CW(KC_TRNS, KC_TRNS)
+    },
